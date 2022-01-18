@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ElectricC.Core.SDL\ElectricC.Core.SDL.csproj">
+      <Private></Private>
+      <IncludeAssets></IncludeAssets>
+    </ProjectReference>
+    <ProjectReference Include="..\ElectricC.ECS\ElectricC.ECS.csproj" />
+    <ProjectReference Include="..\ElectricC.Graphics\ElectricC.Graphics.csproj" />
+    <ProjectReference Include="..\ElectricC.Input\ElectricC.Input.csproj" />
+  </ItemGroup>
+
+</Project>

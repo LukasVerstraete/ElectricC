@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Textures\girl.png" />
+    <None Remove="Assets\Textures\grass.png" />
+    <None Remove="Assets\Textures\Leen.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\Textures\girl.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Textures\grass.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Textures\Leen.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="sdl2" Version="2.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ElectricC.Core\ElectricC.Core.csproj" />
+  </ItemGroup>
+
+</Project>
